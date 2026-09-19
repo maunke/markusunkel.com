@@ -25,6 +25,7 @@ impl CustomComponent for RandomImage {
             ));
         };
         params.finish("random_image")?;
+        let number = tracer.img();
         let images = body
             .lines()
             .map(str::trim)
@@ -32,7 +33,6 @@ impl CustomComponent for RandomImage {
             .map(|dest_url| {
                 use crate::markdown::content_dir;
 
-                let number = tracer.img();
                 let source = content_dir().join("assets").join(dest_url);
                 let (lqip, set, width, height, gradient) = Image::preprocess(&source, number)?;
                 Ok(Image {
