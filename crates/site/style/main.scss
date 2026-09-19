@@ -1,0 +1,452 @@
+:root {
+  --accent: #716f7e;
+  --accent-dark: #000d8a;
+  --black: #050315;
+  --gray: #716f7e;
+  --text-secondary: #565560;
+  --gray-light: 229, 233, 240;
+  --gray-dark: 0, 0, 0;
+  --gray-gradient: rgba(var(--gray-light), 50%), #fff;
+  --box-shadow:
+    0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
+  --primary: #c1554c;
+}
+
+@font-face {
+  font-family: "Berkeley Mono";
+  src: url("/fonts/BerkeleyMono-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Berkeley Mono";
+  src: url("/fonts/BerkeleyMono-Medium.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@property --page-gradient-1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: transparent;
+}
+
+@property --page-gradient-2 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: transparent;
+}
+
+@property --page-gradient-3 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: transparent;
+}
+
+@property --page-gradient-4 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: transparent;
+}
+
+html {
+  background-color: #e6ded4;
+  background-image: linear-gradient(to right,
+      var(--page-gradient-1),
+      var(--page-gradient-2),
+      var(--page-gradient-3),
+      var(--page-gradient-4));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    transition:
+      --page-gradient-1 0.6s ease,
+      --page-gradient-2 0.6s ease,
+      --page-gradient-3 0.6s ease,
+      --page-gradient-4 0.6s ease;
+  }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+@media screen and (min-width: 680px) {
+  .container {
+    position: relative;
+    left: calc((100vw - 100%) / 2);
+  }
+}
+
+body {
+  font-family: "Berkeley Mono", monospace;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  hyphens: auto;
+  color: var(--black);
+}
+
+nav {
+  margin-top: 16px;
+  display: flex;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container {
+  width: 100%;
+  min-width: 375px;
+  max-width: 640px;
+  margin: 0 auto;
+  hyphens: auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+caption {
+  caption-side: bottom;
+}
+
+.astro-code {
+  font-family: "Berkeley Mono", monospace;
+}
+
+main {
+  flex-grow: 1;
+  padding-top: 0.6em;
+}
+
+
+h1 {
+  margin: 3em 0 0.6em 0;
+  color: rgb(var(--black));
+  line-height: 1.3;
+}
+
+h2 {
+  margin: 2.4em 0 0.6em 0;
+  color: rgb(var(--black));
+  line-height: 1.3;
+  padding-top: 1em;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin: 2em 0 0.6em 0;
+  color: rgb(var(--black));
+  line-height: 1.3;
+  padding-top: 1em;
+}
+
+h1 {
+  margin-top: 0.6em;
+  font-size: 1.25em;
+}
+
+h2 {
+  font-size: 1.125em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+u {
+  text-underline-offset: 2px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--gray);
+  hyphens: manual;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+textarea {
+  width: 100%;
+  font-size: 1rem;
+}
+
+input {
+  font-size: 1rem;
+}
+
+table {
+  border-radius: 0px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.blog-posts {
+  list-style: none;
+  padding-left: 0;
+}
+
+.blog-posts>li {
+  padding-left: 0;
+  margin-bottom: 1em;
+}
+
+time {
+  display: block;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+address {
+  font-style: normal;
+}
+
+figure thead {
+  border-bottom: 1.5px solid var(--gray);
+}
+
+th {
+  padding: 2px 32px 2px 0;
+  vertical-align: top;
+}
+
+td {
+  padding: 2px 32px 2px 0;
+  vertical-align: top;
+}
+
+td p {
+  margin: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 480px) {
+
+  th,
+  td {
+    padding-right: 16px;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 0;
+  }
+}
+
+picture {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+figcaption {
+  font-style: italic;
+  padding: 8px 0 0 0;
+  font-size: 0.8125rem;
+  contain: inline-size;
+}
+
+figure {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 2.4em auto 2.4em auto;
+}
+
+figure:has(table) {
+  width: auto;
+}
+
+
+code {
+  padding: 2px 5px;
+  background-color: rgb(var(--gray-light));
+  border-radius: 2px;
+}
+
+pre {
+  padding: 1.5em;
+  border-radius: 8px;
+}
+
+pre>code {
+  all: unset;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 1.5px solid var(--gray);
+  padding: 0 0 0 16px;
+  margin-left: 0px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+small {
+  font-size: 0.8125rem;
+}
+
+cite {
+  font-size: 0.8125rem;
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgb(var(--gray-light));
+}
+
+ul>li {
+  padding-left: 1ch;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dt:not(:first-child) {
+  margin-top: 1em;
+}
+
+
+dd {
+  margin-left: 16px;
+  color: var(--text-secondary);
+}
+
+dd+dd {
+  font-size: 0.8125rem;
+}
+
+dd a:link,
+dd a:visited {
+  color: inherit;
+}
+
+dd a:hover {
+  color: var(--accent);
+}
+
+dd>p {
+  margin: 0;
+}
+
+table ul {
+  margin-top: 0;
+  font-size: 0.8125rem;
+}
+
+
+a:link {
+  color: var(--black);
+}
+
+a:visited {
+  color: var(--black);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+a:active {
+  color: #455A64;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+
+nav a:hover {
+  color: var(--black);
+}
+
+nav a:active {
+  color: var(--black);
+}
+
+nav a:link {
+  color: var(--black);
+}
+
+nav a:visited {
+  color: var(--black);
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  justify-content: space-between;
+  margin-top: 2.4em;
+  margin-bottom: 1em;
+  font-size: 0.8125rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--black);
+}
+
+footer a:active {
+  color: var(--black);
+}
+
+footer a:link {
+  color: var(--black);
+}
+
+footer a:visited {
+  color: var(--black);
+}

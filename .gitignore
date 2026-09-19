@@ -1,0 +1,12 @@
+# rust
+/target
+crates/site/target
+
+# misc
+.DS_Store
+
+# berkeley font
+crates/site/public/fonts
+
+# editor
+.helix
