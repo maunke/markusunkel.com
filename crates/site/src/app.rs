@@ -1,13 +1,12 @@
+use crate::{
+    components::{Footer, Header},
+    routes::Page,
+};
 use leptos::prelude::*;
 use leptos_meta::{HashedStylesheet, MetaTags, Title, provide_meta_context};
 use leptos_router::{
     components::{Route, Router, Routes},
     path,
-};
-
-use crate::{
-    components::{Footer, Header},
-    routes::Page,
 };
 
 pub fn shell(options: LeptosOptions) -> impl IntoView {
@@ -38,7 +37,7 @@ pub fn shell(options: LeptosOptions) -> impl IntoView {
                 />
                 <link
                     rel="preload"
-                    href="/fonts/BerkeleyMono-Medium.woff2"
+                    href="/fonts/unkel-serif-latin-300.woff2"
                     r#as="font"
                     r#type="font/woff2"
                     fetchpriority="high"

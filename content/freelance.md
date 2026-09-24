@@ -6,15 +6,16 @@ description: I work as a freelance software engineer, computational and data sci
 # Freelance Software Engineer and Data Scientist
 
 I solve and prevent technical problems by writing concepts, designing architectures, and
-implementing solutions primarily in Rust and Python. Here is my
-[resume](/media/resume-markus-unkel-september-2026.pdf).
+implementing solutions primarily in Rust and Python.
 
 ![](freelance.webp "In a get to know meeting.")
 
-Simple philosophy
-: I work deterministically on your value chain. Meaning, I don't experiment in other people's
-  business. I experiment outside of them and may come back with a solution to fulfill the
-  requirement in order to start collaborating.
+Here is my [resume](/media/resume-markus-unkel-september-2026.pdf).
+
+My philosophy
+: I work deterministically on your value chain. Meaning, I don't experiment in your business. I
+  experiment outside and may come back with a solution to fulfill the requirement in order to start
+  collaborating.
 
 ## How We Get Started
 

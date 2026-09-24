@@ -591,7 +591,7 @@ impl Image {
                     use image::ImageEncoder as _;
                     use image::codecs::avif::AvifEncoder;
 
-                    let speed = if cfg!(debug_assertions) { 10 } else { 1 };
+                    let speed = if cfg!(debug_assertions) { 10 } else { 2 };
 
                     let mut mem = Vec::new();
                     AvifEncoder::new_with_speed_quality(&mut mem, speed, quality).write_image(

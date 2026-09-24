@@ -3,8 +3,10 @@ title: Markus Unkel
 description: This is where I write down and share my thoughts, projects and experiences in the hope that this will help here and there.
 ---
 
-Hej! Somewhere between data science, software engineering and physics, I solve problems as a
-freelancer, FOSS maintainer and contributor, by thinking in ansatzes and following Occam’s razor.
+# Hej!
+
+Somewhere between data science, software engineering and physics, I solve problems as a freelancer,
+FOSS maintainer and contributor, by thinking in ansatzes and following Occam’s razor.
 
 I am the founder and maintainer of the open source projects [trykklar](//sr.ht/~maunke/trykklar) and
 [odesign](//odesign.rs), and co-inventor and founder of [ColorFit](//colorfit.ai).

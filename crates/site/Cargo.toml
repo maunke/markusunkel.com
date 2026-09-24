@@ -71,12 +71,6 @@ ssr = [
 [profile.wasm-release]
 inherits = "release"
 opt-level = "z"
-# Must stay off while building with `--split`. wasm-split runs before
-# wasm-bindgen, and LTO folds away the `__wbindgen_describe_*` functions, so
-# wasm-bindgen then reads an empty descriptor stream and panics with
-# "index out of bounds: the len is 0 but the index is 0"
-# (cli-support/src/descriptor.rs:324). `lto = "thin"` fails the same way;
-# opt-level and codegen-units are not involved.
 lto = true
 codegen-units = 1
 panic = "abort"

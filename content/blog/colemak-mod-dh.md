@@ -97,16 +97,19 @@ to iterate two more times.
 As described above the hand pain was the initial trigger for my investigation of a new keyboard
 layout. Beside the layout I started to search for a suitable keyboard, that
 
-**Req. A.** allows to embed the Colemak Mod-DH layout incl. the final layout with special
-characters.
+Req. A.
+: allows to embed the Colemak Mod-DH layout incl. the final layout with special characters.
 
-**Req. B.** brings the hand into a position where the hand tendors do not overstretch.
+Req. B.
+: brings the hand into a position where the hand tendors do not overstretch.
 
-**Req. C.** lets my chest remain open (e.g. a very small keyboard in the center in front of me would
-narrow my chest).
+Req. C.
+: lets my chest remain open (e.g. a very small keyboard in the center in front of me would narrow my
+  chest).
 
-**Req. D.** is programmable and translates the keyboard signals on device instead of moving that
-part to my computer.
+Req. D.
+: is programmable and translates the keyboard signals on device instead of moving that part to my
+  computer.
 
 The requirements **B** and **C** imply an angled and splitted keyboard. A short research to fulfill
 requirements **A** and **D** brought me to the keyboard manufacturer [ZSA](//zsa.io). Fortunately
