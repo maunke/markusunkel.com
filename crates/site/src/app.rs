@@ -37,7 +37,7 @@ pub fn shell(options: LeptosOptions) -> impl IntoView {
                 />
                 <link
                     rel="preload"
-                    href="/fonts/unkel-serif-latin-300.woff2"
+                    href="/fonts/unkel-serif-340-lean.woff2"
                     r#as="font"
                     r#type="font/woff2"
                     fetchpriority="high"
