@@ -202,7 +202,7 @@ fn Node(node: ContentNode) -> AnyView {
                 <figure>
                     <Picture image block=true />
                     <figcaption>
-                        <b>"Figure "{figure.number + 1}": "</b>
+                        <span class="fignumber">"Figure "{figure.number + 1}":"</span>
                         <Nodes nodes=caption />
                     </figcaption>
                 </figure>

@@ -46,19 +46,31 @@ found some interesting ones (see
 [here some literature](//docs.google.com/document/d/1Ic-h8UxGe5-Q0bPuYNgE3NoWiI8ekeadvSQ5YysrwII))
 to consider:
 
-- **Same finger bigrams (SFBs)**: a SFB consists of pressing two keys in succession with the same
-  finger
-- **Same finger Skipgrams (SFSs)**: a SFS consists of pressing two keys with the same finger, but
-  separated by X letters
-- **Lateral stretch bigrams (LSBs)**: a bigram that pulls two of our fingers apart or that forces us
-  to laterally shift our wrist a bit to go from one key to the other
-- **Alt fingering**: using a finger other than the intended one to type a certain bigram, with the
-  purpose of avoiding a SFB, is referred to alt fingering
-- **SFB collisions**: a collision refers to when alt fingering a SFB creates a new SFB
-- **Full scissors bigrams (FSBs)**: The vertical separation between the keys is two rows. The finger
-  that prefers being higher is not.
-- **Roll**: pressing two keys with one hand, and a third key with the other
-- **Redirect**: a one-handed trigram in which the direction changes
+Same finger bigrams (SFBs)
+: A SFB consists of pressing two keys in succession with the same finger.
+
+Same finger Skipgrams (SFSs)
+: A SFS consists of pressing two keys with the same finger, but separated by X letters.
+
+Lateral stretch bigrams (LSBs)
+: A bigram that pulls two of our fingers apart or that forces us to laterally shift our wrist a bit
+  to go from one key to the other.
+
+Alt fingering
+: Using a finger other than the intended one to type a certain bigram, with the purpose of avoiding
+  a SFB, is referred to alt fingering.
+
+SFB collisions
+: A collision refers to when alt fingering a SFB creates a new SFB.
+
+Full scissors bigrams (FSBs)
+: The vertical separation between the keys is two rows. The finger that prefers being higher is not.
+
+Roll
+: Pressing two keys with one hand, and a third key with the other.
+
+Redirect
+: An one-handed trigram in which the direction changes.
 
 ### QWERTY vs Dvorak vs Colemak Mod-DH
 
