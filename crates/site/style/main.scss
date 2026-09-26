@@ -15,8 +15,8 @@
 
 @font-face {
   font-family: "Source Serif 4";
-  src: url("/fonts/unkel-serif-340-lean.woff2") format("woff2");
-  font-weight: 340;
+  src: url("/fonts/unkel-serif-350-lean.woff2") format("woff2");
+  font-weight: 350;
   font-style: normal;
   font-display: swap;
 }
@@ -107,7 +107,7 @@ body {
 
 :where(main) :where(p, li, td, blockquote, dd, figcaption) {
   font-family: var(--font-serif);
-  font-weight: 340;
+  font-weight: 350;
 }
 
 :where(main) :where(nav) :where(p, th),
