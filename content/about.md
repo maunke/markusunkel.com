@@ -59,7 +59,7 @@ One thing led to another and I delayed my physics [bachelor thesis](//quantum-si
 semester to try something out.
 
 Printing method which includes selection of print parameters
-: [USA, IND, ISR; pending in EU, CN](//colorfit.ai/#patent) / 2016
+: [USA, IND, ISR granted; EU grant intended; pending CN](//colorfit.ai/#patent) / 2016
 : - Process and algorithm for minimizing the number of the trial & error runs on gravure-/flexo
     printing machines
   - Assignee: ColorFit and Siegwerk
