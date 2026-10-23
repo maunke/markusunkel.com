@@ -34,7 +34,7 @@ FOSS and Freelance Software Engineer and Data Scientist
 Founder, Inventor, CEO
 : [ColorFit](//colorfit.ai) / 2015 - Present
 : - Realizing prints without trial & error backed by machine learning & physics
-  - [Patent](//colorfit.ai/#patent) granted in USA, IND, ISR; pending in CN and EU
+  - [Patent](//colorfit.ai/#patent) granted in USA, IND, ISR; grant intended in EU; pending in CN
 
 Head of Technology, Software Architect & Engineer
 : [Packiro](//packiro.com) / 2021 - 2022
