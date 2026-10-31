@@ -25,16 +25,24 @@ pub fn Page() -> impl IntoView {
 
 #[cfg(feature = "ssr")]
 fn page_view(slug: &str) -> AnyView {
+    use crate::LEPTOS_WATCH;
     use crate::components::MarkdownView;
     use crate::content::Content;
     let content = expect_context::<Content>();
 
-    let Some(page) = expect_context::<Content>().page(slug).cloned() else {
+    let Some(page) = content.page(slug).cloned() else {
         expect_context::<leptos_axum::ResponseOptions>()
             .set_status(axum::http::StatusCode::NOT_FOUND);
         let page = content.page("404").unwrap().clone();
         return view! { <MarkdownView page canonical=canonical_url(slug) blog=false /> }.into_any();
     };
+
+    let page = if LEPTOS_WATCH {
+        Content::load_fresh_page(slug).unwrap()
+    } else {
+        page
+    };
+
     let canonical = canonical_url(slug);
     let blog = slug.starts_with("blog/");
     view! { <MarkdownView page canonical blog /> }.into_any()

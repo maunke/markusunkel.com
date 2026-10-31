@@ -446,6 +446,7 @@ impl Image {
         path: &Path,
         _number: usize,
     ) -> Result<(Option<String>, ImageSet, u32, u32, Option<Vec<[u8; 4]>>)> {
+        use crate::LEPTOS_WATCH;
         use base64::{Engine as _, engine::general_purpose::STANDARD};
         use fast_image_resize::PixelType;
         use fast_image_resize::images::Image;
@@ -488,7 +489,7 @@ impl Image {
         let lqip = (!transparent)
             .then(|| format!("data:image/webp;base64,{}", STANDARD.encode(&*lqip_mem)));
 
-        let widths = if cfg!(debug_assertions) {
+        let widths = if LEPTOS_WATCH {
             vec![320]
         } else {
             vec![460, 640, 720, 920, 1280, 1920]
@@ -588,10 +589,11 @@ impl Image {
                     mem.to_vec()
                 }
                 ImageType::Avif => {
+                    use crate::LEPTOS_WATCH;
                     use image::ImageEncoder as _;
                     use image::codecs::avif::AvifEncoder;
 
-                    let speed = if cfg!(debug_assertions) { 10 } else { 2 };
+                    let speed = if LEPTOS_WATCH { 10 } else { 2 };
 
                     let mut mem = Vec::new();
                     AvifEncoder::new_with_speed_quality(&mut mem, speed, quality).write_image(

@@ -14,6 +14,8 @@ pub use error::{Error, Result};
 
 pub const SITE_URL: &str = "https://markusunkel.com/";
 
+pub const LEPTOS_WATCH: bool = option_env!("LEPTOS_WATCH").is_some();
+
 #[cfg(feature = "hydrate")]
 #[wasm_bindgen::prelude::wasm_bindgen]
 pub fn hydrate() {

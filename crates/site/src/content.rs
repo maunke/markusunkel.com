@@ -59,6 +59,10 @@ impl Content {
         })
     }
 
+    pub fn load_fresh_page(slug: &str) -> Result<MarkdownPage> {
+        MarkdownPage::try_from_path(&content_dir().join(slug).with_extension("md"))
+    }
+
     fn load_collection(path: &str) -> Result<PageCollection> {
         let dir = content_dir().join(path);
         let mut pages = HashMap::new();
